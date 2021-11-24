@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import yargs from 'yargs/yargs';
 import { outputFizzbuzz } from './output-fizzbuzz';
 import chalk from "chalk";
