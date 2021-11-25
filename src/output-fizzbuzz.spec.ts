@@ -1,9 +1,6 @@
-import { outputFizzbuzz } from './output-fizzbuzz';
+import { buzz, fizz, fizzbuzz, outputFizzbuzz } from './output-fizzbuzz';
 
 describe('outputFizzbuzz', () => {
-    const fizz = 'Fizz';
-    const buzz = 'Buzz';
-    const fizzbuzz = 'FizzBuzz';
 
     it('should print number 1 to x but for multiples of 3 print Fizz or for multiples of 5 print Buzz, or when both multiples of 3 and 5 then print FizzBuzz', () => {
         console.log = jest.fn();

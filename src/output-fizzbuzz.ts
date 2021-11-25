@@ -1,15 +1,19 @@
+export const
+    fizz = 'Fizz',
+    buzz = 'Buzz',
+    fizzbuzz = 'FizzBuzz';
+
 export function outputFizzbuzz(start: number, end: number) {
     for (let i = start; i <= end; i++) {
-
+        let output: number | string = i;
         if (isFizz(i) && isBuzz(i)) {
-            console.log("FizzBuzz");
+            output = "FizzBuzz";
         } else if (isBuzz(i)) {
-            console.log("Buzz");
+            output = "Buzz";
         } else if (isFizz(i)) {
-            console.log("Fizz");
-        } else {
-            console.log(i);
+            output = "Fizz";
         }
+        console.log(output);
     }
 }
 
